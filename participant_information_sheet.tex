@@ -1,0 +1,161 @@
+\documentclass[11pt, a4paper, oneside]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\pagenumbering{arabic}
+\usepackage{amssymb,amsmath}
+\usepackage{lastpage}
+\usepackage{hanging}
+\usepackage[scale=.8]{sourcecodepro}
+\usepackage{fontspec}
+
+\setmainfont{PublicSans}[
+    Path=./assets/PublicSans/,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\setsansfont{PublicSans}[
+    Path=./assets/PublicSans/,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+\usepackage[]{titlesec}
+\titlespacing*{\paragraph} {0pt}{1ex}{2ex}
+
+\usepackage{dashrule}
+\usepackage[unicode=true,hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+%% New commands for handling title and subtitle
+\makeatletter
+\newcommand{\subtitle}[1]{\def\@subtitle{#1}}
+\newcommand{\maketitleandsubtitle}{%
+{\sffamily\Large\bfseries\@title}\\
+{\sffamily\large\@subtitle}
+}
+\makeatother
+
+%% Set title and subtitle
+\title{Participant Information Sheet}
+\subtitle{Name of your research project}
+
+%% Define header and footer including title.
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength\headheight{47pt}
+\addtolength{\headsep}{-10pt}
+\addtolength{\textheight}{-10pt}
+\addtolength{\footskip}{-30pt}
+\lhead{\includegraphics[width=4.5cm]{assets/ANU_Primary_Horizontal_GoldBlack.jpg}}
+\rhead{\maketitleandsubtitle}
+% \fancyfoot{\hfill\thepage~of~\pageref{LastPage}\hfill}
+\lfoot{\small The Australian National University\\ \footnotesize TEQSA Provider ID: PRV12002 (Australian University) | CRICOS Provider Code: 00120C}
+\rfoot{\thepage~of~\pageref{LastPage}}
+
+%% Start of the actual document
+\begin{document}
+
+\paragraph{Delete these instructions:} This is just the sample headings from the ANU template as of 7 Aug 2024. Please check the Word document templates, ANU instructions and other examples before assuming this is all correct.
+
+\section{Researcher}
+
+
+
+\section{Project Title:}
+
+
+
+\section{Outline of the Project:}
+
+\paragraph{Description and Methodology:}
+
+\paragraph{Participants:}
+
+\paragraph{Use of Data and Feedback:}
+
+\paragraph{Project Funding:} (only include if applicable, generally not)
+
+
+
+\section{Participant Involvement:}
+
+\paragraph{Voluntary Participation \& Withdrawal:}
+
+\paragraph{What does participation in the research entail?}
+
+\paragraph{Location and Duration:}
+
+\paragraph{Remuneration:} (only include if applicable)
+
+\paragraph{Risks:}
+
+\paragraph{Benefits:}
+
+\paragraph{Implications of Participation:} (only include if applicable, generally not)
+
+\paragraph{Exclusion Criteria:} (only include if applicable)
+
+
+
+\section{Confidentiality:}
+
+Who will have access.
+
+Data confidentiality.
+
+Attribution.
+
+
+
+\section{Privacy Notice:}
+
+In collecting your personal information within this research, the ANU must comply with the Privacy Act 1988. The ANU Privacy Policy is available at \url{https://policies.anu.edu.au/ppl/document/ANUP_010007} and it contains information about how a person can:
+\begin{itemize}
+    \item Access or seek correction to their personal information;
+    \item Complain about a breach of an Australian Privacy Principle by ANU, and how ANU will handle the complaint.
+\end{itemize}
+
+
+
+\section{Data Storage:}
+
+\paragraph{Where:} 
+
+\paragraph{How long:} 
+
+\paragraph{Handling of data following the required storage period:} 
+
+
+
+\section{Queries and Concerns:}
+
+\paragraph{Contact Details for More Information:} Generally YOU by email: \url{Your.Name@anu.edu.au} or Dr Charles Martin by email: \url{Charles.Martin@anu.edu.au} or phone: (02) 6125 3139
+
+
+
+\section{Ethics Committee Clearance:}
+
+The ethical aspects of this research have been approved by the ANU Human Research Ethics Committee (Protocol H/20XX/XXXX). 
+If you have any concerns or complaints about how this research has been conducted, please contact:
+
+\vspace{0.5cm}
+
+\indent Ethics Manager\\
+\indent The ANU Human Research Ethics Committee\\
+\indent The Australian National University\\
+\indent Telephone: +61 2 6125 3427\\
+\indent Email: Human.Ethics.Officer@anu.edu.au
+\end{document}

@@ -1,0 +1,98 @@
+\documentclass[11pt, a4paper, oneside]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\pagenumbering{arabic}
+\usepackage{amssymb,amsmath}
+\usepackage{lastpage}
+\usepackage{hanging}
+\usepackage[scale=.8]{sourcecodepro}
+\usepackage{fontspec}
+
+\setmainfont{PublicSans}[
+    Path=./assets/PublicSans/,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\setsansfont{PublicSans}[
+    Path=./assets/PublicSans/,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+    ]
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+\usepackage[]{titlesec}
+\titlespacing*{\paragraph} {0pt}{1ex}{2ex}
+
+\usepackage{dashrule}
+\usepackage[unicode=true,hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+%% New commands for handling title and subtitle
+\makeatletter
+\newcommand{\subtitle}[1]{\def\@subtitle{#1}}
+\newcommand{\maketitleandsubtitle}{%
+{\sffamily\Large\bfseries\@title}\\
+{\sffamily\large\@subtitle}
+}
+\makeatother
+
+%% Set title and subtitle
+\title{Recruitment Resources}
+\subtitle{Name of your research project}
+
+%% Define header and footer including title.
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength\headheight{47pt}
+\addtolength{\headsep}{-10pt}
+\addtolength{\textheight}{-10pt}
+\addtolength{\footskip}{-30pt}
+\lhead{\includegraphics[width=4.5cm]{assets/ANU_Primary_Horizontal_GoldBlack.jpg}}
+\rhead{\maketitleandsubtitle}
+\lfoot{\small The Australian National University\\ \footnotesize TEQSA Provider ID: PRV12002 (Australian University) | CRICOS Provider Code: 00120C}
+
+
+%% Start of the actual document
+\begin{document}
+
+\section{Recruitment Poster}
+
+Here is the poster image that we will use on social media for recruitment:
+
+%% Insert your poster or social media image here.
+
+\section{Social media recruitment text}
+
+The following text will be used on social media for recruitment:
+
+\begin{quote}
+  Are you interested TOPIC X? We are looking for participants to help EXAMINE THIS RESEARCH PROJECT. The NAME OF THIS RESEARCH PROJECT is a research project at the School of Computing, Australian National University.
+
+    You can find more details and sign up at: https://short-url.anu.edu.au
+
+    The ethical aspects of this research have been approved by the ANU Human Research Ethics Committee (Protocol H/20XX/XXXX).  
+\end{quote}
+
+\section{Sign-up form questions}
+
+Our sign up form will have the following questions:
+
+\begin{enumerate}
+    \item Are you older than 18? (yes/no response)
+    \item Are you able to attend study sessions on ANU campus? (yes/no response)
+    \item Please provide an email or phone number so that we can contact you to arrange a study session: (text response)
+\end{enumerate}
+
+\end{document}
