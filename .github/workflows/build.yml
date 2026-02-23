@@ -1,0 +1,26 @@
+name: Build LaTeX PDFs
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install LaTeX and build PDFs
+      uses: xu-cheng/latex-action@v3
+      with:
+        latexmk_shell_escape: true
+        glob_root_directory: .
+        working_directory: .
+    
+    - name: Build PDFs with make
+      run: make all
