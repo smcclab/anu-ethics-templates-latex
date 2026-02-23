@@ -18,9 +18,17 @@ jobs:
     - name: Install LaTeX and build PDFs
       uses: xu-cheng/latex-action@v3
       with:
+        root_file: |
+          main.tex
+          consent_form.tex
+          project_description.tex
+          participant_information_sheet.tex
+          recruitment_resources.tex
+          sample_questions.tex
         latexmk_shell_escape: true
-        glob_root_directory: .
+        latexmk_use_xelatex: true
         working_directory: .
-    
-    - name: Build PDFs with make
-      run: make all
+        extra_packages: |
+          fontspec
+          hanging
+          sourcecodepro
